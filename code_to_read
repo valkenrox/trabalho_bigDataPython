@@ -1,0 +1,16 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('C:/Users/202103055737/PycharmProjects/read/venv/ler_arquivo')
+
+x = df['nome']
+y = df['titulo']
+
+plt.xlabel('Nome do Time',fontsize=14)
+plt.ylabel('Titulos nos ultimos 3 anos', fontsize = 14)
+
+
+
+plt.bar(x,y)
+
+plt.show()
